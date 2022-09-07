@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 // define a struct to hold each list node
 struct node {
@@ -28,7 +29,7 @@ public:
         break;
     }
     
-    std::cout << "deleted " << deleted << " nodes" << std::endl;
+    cout << "deleted " << deleted << " nodes" << endl;
     
   }
   
@@ -40,7 +41,7 @@ public:
   
   // push a node on to the back of the list 
   void push(const int &data) {
-    std::cout << "pushing " << data << std::endl;
+    cout << "pushing " << data << endl;
     node *newNode = new node;
     newNode->data = data;
     
@@ -87,12 +88,12 @@ int main(int argc, char **argv) {
   list.push(123);
   list.push(678);
   
-  std::cout << "list length: " << list.length() << std::endl;
+  cout << "list length: " << list.length() << endl;
   
-  std::cout << "shifted: " << list.shift() << std::endl;
-  std::cout << "shifted: " << list.shift() << std::endl;
+  cout << "shifted: " << list.shift() << endl;
+  cout << "shifted: " << list.shift() << endl;
   
-  std::cout << "list length: " << list.length() << std::endl;
+  cout << "list length: " << list.length() << endl;
   
   return 0;
 }
